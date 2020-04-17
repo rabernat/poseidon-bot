@@ -1,0 +1,10 @@
+name: pangeo
+channels:
+  - conda-forge
+dependencies:
+  - cmocean
+  - xgcm
+  - pip
+  - pip:
+    - python-twitter
+  
