@@ -1,0 +1,15 @@
+name: pangeo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy=1.17.3
+  - matplotlib=3.1.2
+  - xarray=0.15.0
+  - intake_xarray=0.3.1
+  - cartopy=0.17.0
+  - cmocean=2.0
+  - xgcm=0.3.0
+  - pip
+  - pip:
+    - python-twitter==3.5
