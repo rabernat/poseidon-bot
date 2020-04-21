@@ -16,6 +16,8 @@ jobs:
       - name: Install Binderbot from github master
         run: pip install git+https://github.com/pangeo-gallery/binderbot.git
       - name: Build notebooks using Binderbot
+        env:
+          TWITTER_SECRET: ${{ secrets.TWITTER_SECRET }}
         run: >
           python -m binderbot.cli --binder-url https://binder.pangeo.io/
           --repo rabernat/poseidon-bot --ref binder
